@@ -10,6 +10,11 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     Vector2 move;
 
+    public int health { get { return currentHealth; }}
+
+    public int maxHealth = 5;
+    public int currentHealth = 1;
+
     public float speed = 4.5f;
 
     void Start()
@@ -20,6 +25,8 @@ public class PlayerController : MonoBehaviour
 
         MoveAction.Enable();
         rigidbody2d = GetComponent<Rigidbody2D>();
+
+        //currentHealth = maxHealth;
     }
 
     void Update()
@@ -31,5 +38,11 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 position = (Vector2)rigidbody2d.position + move * speed * Time.deltaTime;
         rigidbody2d.MovePosition(position);
+    }
+    public void ChangeHealth (int amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+
+        Debug.Log(currentHealth + "/" +  maxHealth);
     }
 }
