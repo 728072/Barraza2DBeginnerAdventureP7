@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4390517986983515742}
   - component: {fileID: 665686094548252142}
   - component: {fileID: -1924937190969324302}
+  - component: {fileID: 7415622830247726179}
   m_Layer: 0
   m_Name: DamageZone
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7521140405902796390}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.74, y: 1.63, z: 0}
+  m_LocalPosition: {x: 18.327553, y: -34.58988, z: 0}
   m_LocalScale: {x: 0.46384692, y: 0.46384692, z: 0.46384692}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -114,10 +115,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.059081674, y: -0.029547215}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -126,7 +127,19 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 4.481906, y: 3.548388}
   m_EdgeRadius: 0
+--- !u!114 &7415622830247726179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7521140405902796390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2596d42f75b433a4e8c1f88ea63e14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
